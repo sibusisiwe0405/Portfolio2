@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="hearts" id="hearts"></div>
+    
     <!-- Navigation -->
     <nav id="navbar">
         <div class="container">
@@ -16,10 +18,10 @@
                 <div class="logo">SN</div>
                 <ul class="nav-links">
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
+                    <li><a href="about.html">About</a></li>
                     <li><a href="#qualifications">Education</a></li>
                     <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="work.html">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
             </div>
@@ -101,7 +103,7 @@ When I'm not coding, you can find me exploring new design trends, sipping coffee
                 </div>
                 <div class="qual-card fade-in">
                     <i class="fas fa-award qual-icon"></i>
-                    <h3>JavaScript and Data Structures</h3>
+                    <h3>JavaScript Algorithms and Data Structures</h3>
                     <div class="institution">FreeCodeCamp</div>
                     <div class="year">2024</div>
                     <p>Foundational understanding of AWS Cloud concepts, services, security, architecture, pricing, and support</p>
@@ -237,7 +239,7 @@ When I'm not coding, you can find me exploring new design trends, sipping coffee
                 <div class="hobby-item fade-in">
                     <i class="fas fa-brush"></i>
                     <h3>Drawing</h3>
-                    <p>DIY wall art and coloring</p>
+                    <p>DIY wall art, doodling and adult coloring books</p>
                 </div>
             </div>
         </div>
@@ -260,7 +262,7 @@ When I'm not coding, you can find me exploring new design trends, sipping coffee
                         </div>
                     </div>
                     
-                    <div class="contact-item">
+                    <div class="contact-item"> 
                         <i class="fas fa-phone"></i>
                         <div>
                             <strong>Phone</strong><br>
@@ -285,7 +287,7 @@ When I'm not coding, you can find me exploring new design trends, sipping coffee
                 </div>
                 
                 <div class="contact-form fade-in">
-                    <form>
+                    <form id="contact-form" action="https://formspree.io/f/xrblvoee" method="POST">
                         <div class="form-group">
                             <label for="name">Name</label>
                             <input type="text" id="name" name="name" placeholder="Your Name" required>

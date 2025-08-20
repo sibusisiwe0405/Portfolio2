@@ -128,7 +128,7 @@ document.querySelectorAll('.btn').forEach(button => {
         setTimeout(() => {
             ripple.remove();
         }, 300);
-    });
+    }); 
 });
 function createHeart() {
     const heart = document.createElement('div');
@@ -143,6 +143,32 @@ function createHeart() {
     setTimeout(() => {
         heart.remove();
     }, 8000);
-}
+} 
 // Create hearts periodically
 setInterval(createHeart, 2000);
+
+  const form = document.getElementById('contact-form');
+  const status = document.getElementById('form-status');
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    status.textContent = 'Sending...';
+
+    try {
+      const response = await fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+      });
+
+      if (response.ok) {
+        form.reset();
+        status.textContent = 'Thanks! Your message has been sent.';
+      } else {
+        const data = await response.json().catch(() => ({}));
+        status.textContent = data?.errors?.[0]?.message || 'Oops! Something went wrong.';
+      }
+    } catch {
+      status.textContent = 'Network error. Please try again.';
+    }
+  });
