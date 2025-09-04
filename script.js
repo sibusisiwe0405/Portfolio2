@@ -51,7 +51,7 @@ document.querySelector('form').addEventListener('submit', function(e) {
     const email = formData.get('email');
     const subject = formData.get('subject');
     const message = formData.get('message');
-    
+       
     // Simple validation
     if (!name || !email || !subject || !message) {
         alert('Please fill in all fields.');
@@ -89,7 +89,7 @@ window.addEventListener('load', function() {
         }, 1000);
     }
 });
-
+ 
 // Add parallax effect to hero section
 window.addEventListener('scroll', function() {
     const scrolled = window.pageYOffset;
