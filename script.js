@@ -61,7 +61,7 @@ document.querySelector('form').addEventListener('submit', function(e) {
     // Simulate form submission
     alert('Thank you for your message! I\'ll get back to you soon.');
     this.reset();
-});
+});  
 
 // Add typing effect to hero title
 function typeWriter(element, text, speed = 100) {
