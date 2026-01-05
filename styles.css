@@ -246,6 +246,16 @@ section {
     box-shadow: 0 20px 40px rgba(221, 220, 220, 0.1);
     transition: transform 0.3s ease;
 }
+.profile-img {
+    position: absolute;
+    right: 170px;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 20px 40px rgba(221, 220, 220, 0.1);
+    transition: transform 0.3s ease;
+}
 .about-image {
     margin-top: 50px;
     justify-content: right;
