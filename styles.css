@@ -104,11 +104,16 @@ nav.scrolled {
 }
 
 .hero-text .subtitle {
-    font-size: 1.25rem;
+    font-size: 1.40rem;
     color: #eb257b;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.2rem;
     opacity: 0;
     animation: fadeInUp 1s ease 0.2s forwards;
+}
+.subtitle-2 {
+    font-size: 1.40rem;
+    color: #eb257b;
+    
 }
 
 .hero-text p {

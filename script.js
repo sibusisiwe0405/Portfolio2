@@ -42,6 +42,8 @@ document.querySelectorAll('.fade-in').forEach(el => {
 });
 
 // Form submission
+
+
 document.querySelector('form').addEventListener('submit', function(e) {
     e.preventDefault();
     
